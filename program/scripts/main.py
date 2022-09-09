@@ -7,6 +7,7 @@ from learning import Learning
 
 class Main:
     '''Performs ML pipeline operations'''
+
     def __init__(self):
         self.data_learn_path = constants.DATA_LEARN_PATH
         self.data_predict_path = constants.DATA_PREDICT_PATH
@@ -26,7 +27,6 @@ class Main:
 
     def main(self):
         '''Core method that runs through all the pipeline steps'''
-
         # load data
         self.data_learn = self.load_data(self.data_learn_path)
         self.data_predict = self.load_data(self.data_predict_path)
