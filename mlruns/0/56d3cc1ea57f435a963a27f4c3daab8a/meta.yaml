@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/danya/github/house_pricing/mlruns/0/56d3cc1ea57f435a963a27f4c3daab8a/artifacts
+end_time: 1662968198111
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 56d3cc1ea57f435a963a27f4c3daab8a
+run_uuid: 56d3cc1ea57f435a963a27f4c3daab8a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1662968180948
+status: 4
+tags: []
+user_id: vikak

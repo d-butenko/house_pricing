@@ -2,9 +2,9 @@ import os
 
 WORK_DIR = os.getcwd()
 
-DATA_LEARN_PATH = WORK_DIR + '\\data\\train.csv'
-DATA_PREDICT_PATH = WORK_DIR + '\\data\\test.csv'
-OUTPUT_PATH = WORK_DIR + '\\data\\output.csv'
+DATA_LEARN_PATH = WORK_DIR + '\\program\\data\\train.csv'
+DATA_PREDICT_PATH = WORK_DIR + '\\program\\data\\test.csv'
+OUTPUT_PATH = WORK_DIR + '\\program\\data\\output.csv'
 
 FEATURES_TO_DROP = ['Id', 'Street', 'Alley', 'LandContour', 'LandSlope', 'Condition1', 'Condition2', 'RoofMatl', 'Heating', 'Electrical', 
                     'SaleType', 'SaleCondition', 'Utilities', 'BsmtCond', 'BsmtFinType2', 'Functional', 'GarageQual', 'GarageCond', 

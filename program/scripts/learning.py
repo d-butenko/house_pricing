@@ -1,10 +1,15 @@
-from sklearn.model_selection import train_test_split
+import numpy as np
 
+from sklearn.model_selection import train_test_split
 from sklearn.linear_model import Lasso
 from sklearn.linear_model import Ridge
 from sklearn.svm import LinearSVR
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.ensemble import StackingRegressor
+from sklearn.metrics import mean_squared_error
+
+# import mlflow
+# import mlflow.pyfunc
 
 class Learning:
     '''Handles learning and prediction process'''
@@ -33,6 +38,12 @@ class Learning:
         stacking_ensemble.fit(features, labels)
             
         return stacking_ensemble
+
+    def get_score(self, estimator=None, X_test=None, y_test=None):
+        '''Returns R^2 score'''
+        r2 = estimator.score(X_test, y_test)
+
+        return r2
 
     def make_prediction(self, estimator=None, data_predict=None):
         '''Predicts unknown targets'''
